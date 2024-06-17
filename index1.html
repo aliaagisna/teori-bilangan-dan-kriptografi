@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Teori bilangan dan Kriptografi</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="favicon.png" rel="icon">
+  <link href="apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link href="bootstrap-icons.css" rel="stylesheet">
+  <link href="aos.css" rel="stylesheet">
+  <link href="glightbox.min.css" rel="stylesheet">
+  <link href="swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Arsha
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Updated: Jun 14 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">kelompok 3</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#calculator">calculator</a></li>
+          <li><a href="#team">Team</a></li>
+
+          </li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="#about">Get Started</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
+            <h1>Teori Bilangan dan Kriptografi</h1>
+            <div class="d-flex">
+              <a href="#about" class="btn-get-started">Get Started</a>
+              <a href="https://youtu.be/egJvN0asZvI?si=hkukJs1XN9KwxEDQ"
+                class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>
+                  Video Pembelajaran Teori Bilangan</span></a>
+            </div>
+            </br>
+            <div class="d-flex">
+              <a href="https://youtu.be/DTojZZ1y2VM?si=K6J0okmdX_1lv_QE"
+                class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>
+                  Video Pembelajaran Kriptografi</span></a>
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
+            <img src="hero-img.png" class="img-fluid animated" alt="">
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients section">
+
+      <div class="container" data-aos="zoom-in">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 40
+                },
+                "480": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 60
+                },
+                "640": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 80
+                },
+                "992": {
+                  "slidesPerView": 5,
+                  "spaceBetween": 120
+                },
+                "1200": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 120
+                }
+              }
+            }
+          </script>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Clients Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <p>
+              Teori bilangan adalah cabang matematika yang mempelajari sifat-sifat dan hubungan antara bilangan bulat.
+              Ini mencakup berbagai topik seperti bilangan prima, faktorisasi, kongruensi, dan fungsi aritmetika. Teori
+              bilangan memainkan peran penting dalam berbagai bidang matematika dan memiliki aplikasi dalam sains
+              komputer, khususnya dalam kriptografi. </p>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <p>Kriptografi adalah ilmu dan seni untuk menjaga keamanan informasi dengan mengubahnya menjadi bentuk yang
+              tidak dapat dimengerti oleh pihak yang tidak berwenang. Ini melibatkan teknik seperti enkripsi dan
+              dekripsi, tanda tangan digital, dan protokol keamanan. Kriptografi modern banyak menggunakan konsep dari
+              teori bilangan, seperti bilangan prima dan operasi modular, untuk menciptakan sistem yang aman dan sulit
+              untuk dipecahkan tanpa kunci yang tepat</p>
+            <a href="#" class="read-more"><span>Pembelajaran lebih lanjut</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="section why-us" data-builder="section">
+
+      <div class="container-fluid">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
+
+            <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
+              <h3><span> Beberapa hal mengenai </span><strong>Teori Bilangan dan Kriptografi</strong></h3>
+            </div>
+
+            <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="faq-item faq-active">
+
+                <h3><span>01</span> Apa sih Aritmatika modular itu?</h3>
+                <div class="faq-content">
+                  <p> Aritmetika modular adalah metode aritmetika untuk menyelesaikan permasalahan mengenai bilangan
+                    bulat. Ide dasar dari aritmetika modular adalah bekerja dengan sisa hasil pembagian bilangan, bukan
+                    dengan bilangan itu sendiri. </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span>02</span> Apa sih algoritma pembagian dan aritmatika modular itu?</h3>
+                <div class="faq-content">
+                  <p>Algoritma pembagian adalah algoritma yang digunakan untuk membagi dua bilangan integer. Algoritma
+                    pembagian yang paling umum digunakan adalah algoritma pembagian biner. Algoritma ini bekerja dengan
+                    membagi bilangan pembagi (dividend) dengan bilangan pembagi (divisor) secara berulang-ulang hingga
+                    tidak ada sisa lagi.
+                    Aritmatika modular adalah operasi matematika yang dilakukan pada bilangan integer dengan menggunakan
+                    operasi modulo. Operasi modulo adalah operasi sisa pembagian. Hasil dari operasi modulo adalah sisa
+                    pembagian dari dua bilangan.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span>03</span> Apa itu pembagi prima? </h3>
+                <div class="faq-content">
+                  <p> Pembagi prima dari suatu bilangan adalah bilangan prima yang dapat membagi habis bilangan
+                    tersebut. Bilangan prima sendiri adalah bilangan yang hanya memiliki dua pembagi yaitu 1 dan dirinya
+                    sendiri.
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3><span>04</span> Apakah setiap kekongruenan linear memiliki solusi?</h3>
+                <div class="faq-content">
+                  <p> Menyelesaikan kekongruenan linear, yang memiliki bentuk ax ≡ b (mod m), adalah tugas penting dalam
+                    mempelajari teori bilangan dan aplikasinya, seperti halnya menyelesaikan persamaan linier memainkan
+                    peran penting penting dalam kalkulus dan aljabar linier. Untuk menyelesaikan kekongruenan linear,
+                    kami menggunakan invers modulo m. Kami akan menjelaskan cara bekerja mundur melalui langkah-langkah
+                    algoritma Euclidean untuk menemukan invers modulo m. Setelah kita menemukan invers dari modulo m,
+                    kita selesaikan kekongruenan ax ≡ b(mod m) dengan mengalikan kedua sisi kesebangunan dengan invers
+                    ini. </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+              <div class="faq-item">
+                <h3><span>05</span> Kenapa Kriptografi berhubungan dengan Teori Bilangan?</h3>
+                <div class="faq-content">
+                  <p> Kriptografi berhubungan erat dengan teori bilangan karena banyak algoritma kriptografi modern
+                    memanfaatkan konsep dan properti bilangan bulat, khususnya bilangan prima, untuk menciptakan sistem
+                    keamanan yang kuat.
+                    Teori bilangan menyediakan dasar matematis untuk operasi seperti eksponensial modular dan
+                    kongruensi, yang digunakan dalam berbagai algoritma enkripsi dan dekripsi. Karena itu, pemahaman
+                    yang mendalam tentang teori bilangan sangat penting dalam pengembangan dan analisis metode
+                    kriptografi.
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-5 order-1 order-lg-2 why-us-img">
+            <img src="why-us.png" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Why Us Section -->
+
+
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>calculator</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-5">
+          <!-- kalkulator aryo -->
+          <div class="col-xl-3 col-md-3 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <!DOCTYPE html>
+              <html>
+
+              <head>
+                <title>Aritmatika Modular</title>
+                <script>
+                  function inversModular(b, modulus) {
+                    let m0 = modulus, t, q;
+                    let x0 = 0, x1 = 1;
+
+                    if (modulus == 1) return 0;
+
+                    while (b > 1) {
+                      q = Math.floor(b / modulus);
+                      t = modulus;
+                      modulus = b % modulus;
+                      b = t;
+                      t = x0;
+                      x0 = x1 - q * x0;
+                      x1 = t;
+                    }
+
+                    if (x1 < 0) x1 += m0;
+
+                    return x1;
+                  }
+
+                  function calculateModularArithmetic() {
+                    const a = parseInt(document.getElementById('a').value);
+                    const b = parseInt(document.getElementById('b').value);
+                    const modulus = parseInt(document.getElementById('modulus').value);
+
+                    const penjumlahanModular = (a + b) % modulus;
+                    document.getElementById('penjumlahanModular').textContent = penjumlahanModular;
+
+                    let penguranganModular = (a - b) % modulus;
+                    if (penguranganModular < 0) penguranganModular += modulus;
+                    document.getElementById('penguranganModular').textContent = penguranganModular;
+
+                    const perkalianModular = (a * b) % modulus;
+                    document.getElementById('perkalianModular').textContent = perkalianModular;
+
+                    const inversB = inversModular(b, modulus);
+                    if (inversB == -1) {
+                      document.getElementById('pembagianModular').textContent = "Pembagian modular tidak dapat dilakukan karena tidak ada invers modulo untuk bilangan kedua.";
+                    } else {
+                      const pembagianModular = (a * inversB) % modulus;
+                      document.getElementById('pembagianModular').textContent = pembagianModular;
+                    }
+                  }
+                </script>
+              </head>
+
+              <body>
+                <h1>Aritmatika Modular</h1>
+                <form>
+                  <label for="a">Masukkan bilangan pertama:</label><br>
+                  <input type="number" id="a" name="a"><br><br>
+
+                  <label for="b">Masukkan bilangan kedua:</label><br>
+                  <input type="number" id="b" name="b"><br><br>
+
+                  <label for="modulus">Masukkan modulus:</label><br>
+                  <input type="number" id="modulus" name="modulus"><br><br>
+
+                  <button type="button" onclick="calculateModularArithmetic()">Hitung</button>
+                </form>
+                <br>
+                <p>Hasil penjumlahan modular: <span id="penjumlahanModular"></span></p>
+                <p>Hasil pengurangan modular: <span id="penguranganModular"></span></p>
+                <p>Hasil perkalian modular: <span id="perkalianModular"></span></p>
+                <p>Hasil pembagian modular: <span id="pembagianModular"></span></p>
+              </body>
+
+              </html>
+
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <!-- kalkulator nadya -->
+          <div class="col-xl-3 col-md-3 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <!DOCTYPE html>
+              <html>
+
+              <head>
+                <title>Kalkulator Konversi Bilangan</title>
+                <script>
+                  function convertNumber() {
+                    const choice = document.getElementById('choice').value;
+                    const input = document.getElementById('input').value;
+                    let num;
+
+                    try {
+                      switch (choice) {
+                        case '1':
+                          num = parseInt(input, 2);
+                          break;
+                        case '2':
+                          num = parseInt(input, 8);
+                          break;
+                        case '3':
+                          num = parseInt(input);
+                          break;
+                        case '4':
+                          num = parseInt(input, 16);
+                          break;
+                        default:
+                          alert("Pilihan tidak valid");
+                          return;
+                      }
+                    } catch (e) {
+                      alert("Input tidak valid untuk basis yang dipilih.");
+                      return;
+                    }
+
+                    const binary = num.toString(2);
+                    const octal = num.toString(8);
+                    const decimal = num.toString(10);
+                    const hexadecimal = num.toString(16);
+
+                    document.getElementById('binary').textContent = explainConversion(num, binary, "biner", 2);
+                    document.getElementById('octal').textContent = explainConversion(num, octal, "oktal", 8);
+                    document.getElementById('decimal').textContent = explainConversion(num, decimal, "desimal", 10);
+                    document.getElementById('hexadecimal').textContent = explainConversion(num, hexadecimal, "heksadesimal", 16);
+                  }
+
+                  function explainConversion(num, result, basisName, basis) {
+                    return `Bilangan ${num} dalam basis ${basis} (${basisName}) adalah ${result}`;
+                  }
+                </script>
+              </head>
+
+              <body>
+                <h1>Kalkulator Konversi Bilangan</h1>
+                <p>Pilih basis bilangan asal:</p>
+                <select id="choice">
+                  <option value="1">Basis 2 (Biner)</option>
+                  <option value="2">Basis 8 (Oktal)</option>
+                  <option value="3">Basis 10 (Desimal)</option>
+                  <option value="4">Basis 16 (Heksadesimal)</option>
+                </select>
+                <br><br>
+                <label for="input">Masukkan bilangan:</label><br>
+                <input type="text" id="input"><br><br>
+                <button type="button" onclick="convertNumber()">Konversi</button>
+                <br><br>
+                <div>
+                  <p id="binary"></p>
+                  <p id="octal"></p>
+                  <p id="decimal"></p>
+                  <p id="hexadecimal"></p>
+                </div>
+              </body>
+
+              </html>
+            </div>
+          </div>
+          <!-- End Service Item -->
+          <!-- kalkulator vira -->
+          <div class="col-xl-9 col-md-3 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <!DOCTYPE html>
+              <html>
+
+              <head>
+                <title>Math Calculator</title>
+                <script>
+                  function showMenu() {
+                    document.getElementById('menu').style.display = 'block';
+                    document.getElementById('output').innerHTML = '';
+                  }
+
+                  function performAction() {
+                    const choice = parseInt(document.getElementById('choice').value);
+                    let output = '';
+
+                    switch (choice) {
+                      case 1:
+                        const a1 = parseInt(prompt('Masukan Angka Pertama:'));
+                        const b1 = parseInt(prompt('Masukan Angka Kedua:'));
+                        output += `Hasil Pembagian: ${Math.floor(a1 / b1)}<br>`;
+                        output += `Hasil Modular: ${a1 % b1}<br>`;
+                        break;
+                      case 2:
+                        const num = parseInt(prompt('Masukan angka:'));
+                        output += `Binary representasi: ${num.toString(2)}<br>`;
+                        output += `Hexadecimal representasi: ${num.toString(16)}<br>`;
+                        break;
+                      case 3:
+                        const a3 = parseInt(prompt('Masukan Angka Pertama:'));
+                        const b3 = parseInt(prompt('Masukan Angka Kedua:'));
+                        const gcd = calculateGCD(a3, b3);
+                        const isPrimeA = isPrime(a3);
+                        const isPrimeB = isPrime(b3);
+                        output += `FPB dari ${a3} dan ${b3}: ${gcd}<br>`;
+                        output += `Apakah ${a3} bilangan prima: ${isPrimeA}<br>`;
+                        output += `Apakah ${b3} bilangan prima: ${isPrimeB}<br>`;
+                        break;
+                      case 4:
+                        const a4 = parseInt(prompt('Masukan angka:'));
+                        const m = parseInt(prompt('Masukan nomer:'));
+                        const inverse = modularInverse(a4, m);
+                        output += (inverse === -1) ? 'Invers modular tidak ada.<br>' : `Modular inverse: ${inverse}<br>`;
+                        break;
+                      case 5:
+                        output += 'Keluar...<br>';
+                        document.getElementById('menu').style.display = 'none';
+                        break;
+                      default:
+                        output += 'Pilihan anda Salah. Tolong coba kembali.<br>';
+                    }
+
+                    document.getElementById('output').innerHTML = output;
+                  }
+
+                  function calculateGCD(a, b) {
+                    while (b !== 0) {
+                      const temp = b;
+                      b = a % b;
+                      a = temp;
+                    }
+                    return a;
+                  }
+
+                  function isPrime(n) {
+                    if (n <= 1) {
+                      return false;
+                    }
+                    for (let i = 2; i <= Math.sqrt(n); i++) {
+                      if (n % i === 0) {
+                        return false;
+                      }
+                    }
+                    return true;
+                  }
+
+                  function modularInverse(a, m) {
+                    a = a % m;
+                    for (let x = 1; x < m; x++) {
+                      if ((a * x) % m === 1) {
+                        return x;
+                      }
+                    }
+                    return -1; // Return -1 if the modular inverse does not exist
+                  }
+                </script>
+              </head>
+
+              <body onload="showMenu()">
+                <h1>Math Calculator</h1>
+                <div id="menu">
+                  <label for="choice">Pilih menu dibawah ini:</label><br>
+                  <select id="choice">
+                    <option value="1">Pembagian dan Aritmatika Modular</option>
+                    <option value="2">Representasi dan Algoritma Integer</option>
+                    <option value="3">Bilangan Prima dan Pembagi Persekutuan Terbesar</option>
+                    <option value="4">Memecahkan Kesesuaian</option>
+                    <option value="5">Keluar</option>
+                  </select>
+                  <br><br>
+                  <button onclick="performAction()">Pilih</button>
+                  <br><br>
+                  <div id="input"></div>
+                </div>
+                <div id="output"></div>
+              </body>
+
+              </html>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <!-- kalkulator nopal -->
+
+          <div class="col-xl-5 col-md-3 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <!DOCTYPE html>
+              <html lang="en">
+
+              <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Linear Congruence Solver</title>
+                <script>
+                  function extendedEuclidean(a, b) {
+                    if (a === 0) {
+                      return { gcd: b, x: 0, y: 1 };
+                    }
+
+                    const result = extendedEuclidean(b % a, a);
+                    const gcd = result.gcd;
+                    const x = result.y - Math.floor(b / a) * result.x;
+                    const y = result.x;
+
+                    return { gcd: gcd, x: x, y: y };
+                  }
+
+                  function solveLinearCongruence(a, b, m) {
+                    const result = extendedEuclidean(a, m);
+                    const gcd = result.gcd;
+                    const x0 = result.x;
+
+                    if (b % gcd !== 0) {
+                      return -1; // No solution if gcd(a, m) does not divide b
+                    }
+
+                    let x = (x0 * (b / gcd)) % m;
+                    if (x < 0) {
+                      x += m; // Adjusting x to be positive
+                    }
+
+                    // Ensure that the solution is within the range [0, m-1]
+                    x = ((x % m) + m) % m;
+
+                    return x;
+                  }
+
+                  function calculateSolution() {
+                    const a = parseInt(document.getElementById('a').value);
+                    const b = parseInt(document.getElementById('b').value);
+                    const m = parseInt(document.getElementById('m').value);
+
+                    const result = solveLinearCongruence(a, b, m);
+
+                    if (result === -1) {
+                      document.getElementById('result').textContent = "Tidak ada solusi untuk persamaan tersebut.";
+                    } else {
+                      document.getElementById('result').textContent = "Solusi dari " + a + "x ≡ " + b + " (mod " + m + ") adalah x ≡ " + result + " (mod " + m + ").";
+                    }
+                  }
+
+                </script>
+              </head>
+
+              <body>
+                <h1>Linear Congruence Solver</h1>
+                <form>
+                  <label for="a">Masukkan nilai a:</label><br>
+                  <input type="number" id="a" name="a"><br><br>
+
+                  <label for="b">Masukkan nilai b:</label><br>
+                  <input type="number" id="b" name="b"><br><br>
+
+                  <label for="m">Masukkan nilai m (m > 0):</label><br>
+                  <input type="number" id="m" name="m"><br><br>
+
+                  <button type="button" onclick="calculateSolution()">Hitung</button>
+                </form>
+                <br>
+                <p id="result"></p>
+              </body>
+
+              </html>
+
+
+            </div>
+          </div>
+        </div>
+        <!-- End Service Item -->
+
+        <!-- kalkulator alia -->
+
+        <div class="col-xl-5 col-md-3 d-flex" data-aos="fade-up" data-aos-delay="500">
+          <div class="service-item position-relative">
+            <!DOCTYPE html>
+            <html>
+
+            <head>
+              <title>Caesar Cipher</title>
+              <script>
+                // Fungsi untuk mengenkripsi teks menggunakan Caesar Cipher
+                function encrypt(plaintext, shift) {
+                  let ciphertext = '';
+                  for (let i = 0; i < plaintext.length; i++) {
+                    let c = plaintext.charAt(i);
+                    if (isLetter(c)) {
+                      let base = isUpperCase(c) ? 'A' : 'a';
+                      c = String.fromCharCode((c.charCodeAt(0) - base.charCodeAt(0) + shift) % 26 + base.charCodeAt(0));
+                    }
+                    ciphertext += c;
+                  }
+                  return ciphertext;
+                }
+
+                // Fungsi untuk mendekripsi teks menggunakan Caesar Cipher
+                function decrypt(ciphertext, shift) {
+                  return encrypt(ciphertext, 26 - shift);
+                }
+
+                // Helper functions
+                function isLetter(c) {
+                  return c.toLowerCase() != c.toUpperCase();
+                }
+
+                function isUpperCase(c) {
+                  return c == c.toUpperCase();
+                }
+
+                // Fungsi untuk menangani input dari pengguna
+                function handleEncryption() {
+                  const plaintext = document.getElementById('plaintext').value;
+                  const shift = parseInt(document.getElementById('shift').value);
+                  const ciphertext = encrypt(plaintext, shift);
+                  document.getElementById('ciphertext').textContent = ciphertext;
+                }
+
+                function handleDecryption() {
+                  const ciphertext = document.getElementById('ciphertextInput').value;
+                  const shift = parseInt(document.getElementById('shiftDecrypt').value);
+                  const decryptedText = decrypt(ciphertext, shift);
+                  document.getElementById('decryptedText').textContent = decryptedText;
+                }
+              </script>
+            </head>
+
+            <body>
+              <h1>Caesar Cipher</h1>
+
+              <h2>Encryption</h2>
+              <form>
+                <label for="plaintext">Masukkan teks yang akan dienkripsi:</label><br>
+                <input type="text" id="plaintext" name="plaintext"><br><br>
+
+                <label for="shift">Masukkan nilai shift:</label><br>
+                <input type="number" id="shift" name="shift"><br><br>
+
+                <button type="button" onclick="handleEncryption()">Encrypt</button>
+              </form>
+              <br>
+              <p>Ciphertext: <span id="ciphertext"></span></p>
+
+              <h2>Decryption</h2>
+              <form>
+                <label for="ciphertextInput">Masukkan teks yang akan didekripsi:</label><br>
+                <input type="text" id="ciphertextInput" name="ciphertextInput"><br><br>
+
+                <label for="shiftDecrypt">Masukkan nilai shift:</label><br>
+                <input type="number" id="shiftDecrypt" name="shiftDecrypt"><br><br>
+
+                <button type="button" onclick="handleDecryption()">Decrypt</button>
+              </form>
+              <br>
+              <p>Decrypted Text: <span id="decryptedText"></span></p>
+            </body>
+
+            </html>
+
+
+          </div><!-- End Service Item -->
+
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+
+
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Team</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="team-1.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Alia Agisna</h4>
+                <span>2306981</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="team-2.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Aryo Bayu</h4>
+                <span> 2304784</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="team-3.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Nadya Meirzka</h4>
+                <span>2301109</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="team-4.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Naufal Hazazi</h4>
+                <span>2308010</span>
+
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="team-member d-flex align-items-start">
+              <div class="pic"><img src="team-5.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Vivi Rahmawati</h4>
+                <span>2307554</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+
+        </div>
+
+      </div>
+
+    </section><!-- /Team Section -->
+
+
+
+
+    <!-- paling bawah -->
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <span class="sitename">Teori bilangan dan kriptografi</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>A108 Alia agisna</p>
+            <p>bandung</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+62-8314-9595-130</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+        </div>
+
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by alia <a href="https://bootstrapmade.com/"></a>
+      </div>
+    </div>
+
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="validate.js"></script>
+    <script src="aos.js"></script>
+    <script src="glightbox.min.js"></script>
+    <script src="swiper-bundle.min.js"></script>
+    <script src="noframework.waypoints.js"></script>
+    <script src="imagesloaded.pkgd.min.js"></script>
+    <script src="isotope.pkgd.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="main.js"></script>
+
+</body>
+
+</html>
